@@ -1,0 +1,316 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="color"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="search"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select,
+.select,
+.daterange-input {
+	display: block;
+	width: 100%;
+	margin-bottom:0;
+	padding: 8px 5px;
+	border: none;
+	border: 1px solid @light;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	/* margin-left: -5px; */
+	font-size: 18px;
+	background-color: transparent;
+	.-rounded;
+	.-transition;
+
+	&:hover {
+		.-hover;
+	}
+
+	&:focus {
+		.-focus;
+	}
+}
+
+textarea {
+	.-main-font;
+	resize: none;
+
+}
+
+input[type="checkbox"] {
+	position: relative;
+	display: inline-flex;
+	.-flex-align-center;
+	.-justify-center;
+	width: auto;
+	border: 1px solid @light;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin:0px 10px 0 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: transparent;
+	.-circle;
+	.-transition;
+
+	&:focus {
+		background: transparent;
+		outline: none;
+		.-focus;
+	}
+
+	&:hover {
+		.-hover;
+	}
+
+	&:after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		font-size: 14.5px;
+		content: "";
+		color: @success;
+		.-flex;
+		.-flex-align-center;
+		.-justify-center;
+		.-icon;
+		.-transition;
+	}
+
+	&:checked {
+		background: @success;
+		.-success;
+
+		&:after {
+			.-white;
+			content: "\f121";
+			.-transition;
+		}
+	}
+}
+
+input[type="radio"] {
+	position: relative;
+	display: inline-flex;
+	.-flex-align-center;
+	.-justify-center;
+	width: auto;
+	border: 1px solid @light;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin:0px 10px 0 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: transparent;
+	.-circle;
+	.-transition;
+
+	&:focus {
+		background: transparent;
+		outline: none;
+		.-focus;
+	}
+
+	&:hover {
+		.-hover;
+	}
+
+	&:after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		font-size: 14.5px;
+		content: "";
+		border: 1px solid transparent;
+		.-flex;
+		.-flex-align-center;
+		.-justify-center;
+		.-circle;
+		.-transition;
+	}
+
+	&:checked {
+		background: @success;
+		.-success;
+
+		&:after {
+			.-white;
+			.-transition;
+		}
+	}
+}
+
+input[type="checkbox"].switch {
+	height: 24px;
+  	width: 40px;
+  	border: 1px solid @light;
+  	border-radius: 24px;
+  	margin-bottom: -8px;
+  	.-hover;
+
+  	&:focus {
+  		.-focus;
+  	}
+
+  	&:hover {
+  		.-hover;
+  	}
+
+  	&::after {
+  		left: 2px;
+		top: 2px;
+		border-radius: 50%;
+		width: 15px;
+		height: 15px;
+		content: '';
+		border: 1px solid transparent;
+		.-light-bg;
+  	}
+
+  	&:checked {
+  		.-success-bg;
+  		.-success;
+
+  		&::after {
+	  		left: 20px;
+  			.-white-bg;
+	  	}
+  	}
+
+  	&:disabled:not(:checked)::after {
+	  opacity: .6;
+	}
+}
+
+label.switch {
+	line-height: 24px;
+	.-inline-block;
+}
+
+.select, .select-style, .select-wrap {
+	position: relative;
+	.-block;
+
+    &:after {
+    	display: flex;
+			position: absolute;
+			align-items: center;
+			justify-content: center;
+			right: 10px;
+			top: 0;
+			bottom: 0;
+			.-icon;
+			content: "\f123";
+			font-size: 20px;
+			color: @light;
+			pointer-events: none;
+			.-transition;
+    }
+
+    &:hover {
+    	&:after {
+    		color: @dark;
+    	}
+    }
+
+    select {
+	    padding: 8px 5px;
+	    width: 100%;
+	    border: none;
+	    box-shadow: none;
+	    background: transparent;
+	    background-image: none;
+	    -webkit-appearance: none;
+	    color: @black;
+	    border: 1px solid @light;
+
+	    &:focus {
+	    	outline: none;
+	    }
+	}
+}
+
+button, input[type="submit"] {
+	border: none;
+	border: 1px solid @primary;
+	.-block;
+	.-align-center;
+	.-white;
+	.-primary-bg;
+	.-padding-vertical-10;
+	.-padding-horizontal;
+	.-main-font;
+	.-weight-bold;
+	.-space-1;
+	.-caps;
+	.-rounded;
+	.-transition;
+
+	i {
+		display: inline-block;
+		padding-left: 10px;
+		font-size: 30px;
+		.-transition;
+	}
+
+	&:hover {
+		.-focus;
+
+		i {
+			padding-left: 15px;
+		}
+	}
+
+}
+
+label {
+	.-block;
+	.-small;
+	.-main-font;
+	.-weight-medium;
+	.-caps;
+}
+
+.form-heading {
+	.-padding;
+}
+
+.large-input {
+	.-big;
+}
+
+.form-section {
+	.-padding;
+	.-shadow;
+	.-margin-bottom;
+}
+
+.has-error input, .has-error input:focus {
+	.-has-error;
+}
+
+.help-block {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -42px;
+	width: 100%;
+	color: white;
+	padding: 0px 3px;
+	font-size: 12px;
+	color: @primary;
+	margin-bottom: 20px;
+}

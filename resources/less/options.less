@@ -1,0 +1,54 @@
+// Pull in any fonts or icon libraries
+
+// Windfall Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Ionicons
+@import url('//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+.icon, .-icon {
+	font-family: 'Ionicons';
+}
+
+// Pull in Colors Here
+@import "colors";
+
+// Required Color Variables Here
+
+@light: @gray-100;
+@dark: @gray-700;
+@black: black;
+@white: white;
+@primary: @purple;
+@accent: @purple-000;
+@link: @purple;
+@hover: @purple-800;
+@warning: @yellow;
+@danger: @red;
+@success: @green;
+
+// Device Settings
+@desktop: '(min-width: 1024px)';
+@mobile: '(max-width: 1024px)';
+
+// Fonts
+.main-font, .-main-font {
+	font-family: 'Nunito', sans-serif;
+}
+
+.serif, .-serif {
+	font-family: 'Playfair Display', serif;
+}
+
+body {
+	.-main-font;
+}
+
+// set to true to choose font ratio
+@minor-second: false;
+@major-second: false;
+@minor-third: true;
+@major-third: false;
+@perfect-fourth: false;
+@augmented-fourth: false;
+@perect-fifth: false;
+@golden-ratio: false;

@@ -1,0 +1,46 @@
+.card {
+	position: relative;
+	border: 1px solid @light;
+	padding: 20px;
+}
+
+.card.-with-image {
+	padding: 20px;
+	padding-top: 220px;
+
+	.image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 200px;
+	}
+}
+
+.card.-with-footer {
+	padding-bottom: 110px;
+
+	.card-footer {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		max-height: 90px;
+
+		&.button {
+			.-caps;
+			.-weight-bold;
+			.-space-1;
+			.-smaller;
+		}
+	}
+}
+
+.card.-stacked {
+	margin-top: 20px;
+}
+
+.card.-rounded {
+	overflow: hidden;
+	.-rounded;
+}

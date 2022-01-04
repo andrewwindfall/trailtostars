@@ -1,0 +1,75 @@
+/* ------------------ RESPONSIVE -------------------- */
+.-no-mobile, .-hidden-mobile, .-only-desktop {
+	display: none;
+}
+
+.-no-desktop, .-hidden-desktop, .-only-mobile {
+	display: block;
+}
+
+.-no-desktop-flex, .-hidden-desktop-flex, .-only-mobile-flex {
+	display: flex;
+}
+
+.-no-mobile-flex, .-hidden-mobile-flex, .-only-desktop-flex {
+	display: none;
+}
+
+/* ------------------ LAYOUT -------------------- */
+.row.-flex {
+	display: block;
+}
+
+.-full-mobile {
+	width: 100%;
+}
+
+
+@media (max-width: 700px) {
+	.stopside {
+		min-width: 100%;
+		height:auto;
+	}
+	.stopside .listings {
+		padding-bottom:5px;
+	}
+	.bodybox {
+		flex-wrap:wrap;
+	}
+	.mapside {
+		align-self: flex-start;
+		width:50%;
+		max-width: 50%;
+	}
+	.descside {
+		align-self: flex-start;
+		width: 50%;
+		min-width: 50%;
+		max-width: 50%;
+		height:100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.rt-sidebar {
+		position: relative;
+		width: 100%;
+		height:auto;
+		z-index: 2;
+	}
+	.rt-map {
+		position: relative;
+		width: 100%;
+		height:1000px;
+		left:0;
+	}
+	.row {
+		padding:0px;
+	}
+	.mapboxgl-popup-content {
+		width:100%;
+	}
+	.mapboxgl-popup-content img {
+		width: 100%;
+	}
+}
