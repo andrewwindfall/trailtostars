@@ -1,5 +1,6 @@
 body {
   color: #404040;
+  background-color:@dark;
   font: 400 15px/22px 'Helvetica Neue', Sans-serif;
   margin: 0;
   padding: 0;
@@ -178,21 +179,34 @@ gets 2/3 of the page. You can adjust this to your personal liking. */
 }
 .stopside {
   width: 20%;
-  height: 100vh;
+  height: 800px;
+  h1 {
+    color:@white;
+  }
 }
 .mapside {
   position: relative;
   width: 80%;
-  height: 100vh;
+  height: 800px;
 }
 .descside {
   display: none;
   min-width: 300px;
   width: 20%;
-  height: 100vh;
+  height: 800px;
 }
 .bodybox {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height:800px;
+}
+
+.mapboxgl-map {
+  position: absolute;
+  height:100%;
+}
+
+.mapboxgl-popup-content h3 {
+  color:@dark;
 }

@@ -35,7 +35,7 @@
     	<header>
         <a href="/">
       		<div class="logo">
-      			<img src="/assets/img/logo.svg" alt="Montana's Missouri River Country Logo" title="Montana's Missouri River Country Logo">
+      			<!-- insert logo here -->
       		</div>
         </a>
 
@@ -43,27 +43,12 @@
 
     		<div class="navigation">
 
-
-					<span>Montana's Missouri River Country</span>
-
+					<span>Montana's Trail to the Stars</span>
 
 					<ul id="menu">
             @include('partials.nav')
 					</ul>
 
-
-
     		</div>
-
-			<div class="social">
-				<ul>
-					<li><a href="tel:18006531319" title="Call Montana's Missouri River Country">1.800.653.1319</a></li>
-					<li><a href="https://www.facebook.com/pages/Montanas-Missouri-River-Country/170837129653971?fref=ts" target='_blank' title="Montana's Missouri River Country facebook"><i class="ion-social-facebook" title="Montana's Missouri River Country facebook"></i></a></li>
-					<li><a href="https://twitter.com/NEMTTOURISM" target='_blank' title="Montana's Missouri River Country Twitter"><i class="ion-social-twitter" title="Montana's Missouri River Country Twitter"></i></a></li>
-					<li><a href="https://www.instagram.com/montanasmissouririvercountry/" target='_blank' title="Montana's Missouri River Country Instagram"><i class="ion-social-instagram-outline" title="Montana's Missouri River Country Instagram"></i></a></li>
-          <li><a href="https://www.pinterest.com/missouririvercountry/" target="_blank" title="Montana's Missouri River Country Pinterest"><i class="ion-social-pinterest" title="Montana's Missouri River Country Pinterest"></i></a></li>
-					<li><a href="/blog" title="Montana's Missouri River Country Blog"><i class="ion-social-rss" title="Montana's Missouri River Country Blog"></i></a></li>
-				</ul>
-			</div>
 
     	</header>

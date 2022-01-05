@@ -20,4 +20,6 @@ Route::get('/test', function () {
 
 Route::get('/', [PageController::class, 'home']);
 
-Route::get('/stargazing-map', 'PageController@stargazingmap');
+Route::get('/{slug}', [PageController::class, 'page']);
+
+

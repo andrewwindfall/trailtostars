@@ -3256,7 +3256,7 @@ img {
 /* ------------------ BASIC COLORS -------------------- */
 /* ------------------ Additional color modifiers should be added in colors.less */
 .-dark {
-  color: #374151;
+  color: #333333;
 }
 .-light {
   color: #F3F4F6;
@@ -3268,7 +3268,7 @@ img {
   color: #6366F1;
 }
 .-dark-bg {
-  background: #374151;
+  background: #333333;
 }
 .-light-bg {
   background: #F3F4F6;
@@ -3280,7 +3280,7 @@ img {
   background: #6366F1;
 }
 .-dark-hover:hover {
-  color: #374151;
+  color: #333333;
 }
 .-light-hover:hover {
   color: #F3F4F6;
@@ -3292,7 +3292,7 @@ img {
   color: #6366F1;
 }
 .-dark-bg-hover:hover {
-  background: #374151;
+  background: #333333;
 }
 .-light-bg-hover:hover {
   background: #F3F4F6;
@@ -3912,7 +3912,7 @@ hr.clearfix {
   border-color: white;
 }
 .-border-dark {
-  border-color: #374151;
+  border-color: #333333;
 }
 .-border-light {
   border-color: #F3F4F6;
@@ -5174,7 +5174,7 @@ label.switch {
 .select:hover:after,
 .select-style:hover:after,
 .select-wrap:hover:after {
-  color: #374151;
+  color: #333333;
 }
 .select select,
 .select-style select,
@@ -5283,7 +5283,7 @@ table th {
 }
 table.-striped tr {
   background: #F3F4F6;
-  color: #374151;
+  color: #333333;
 }
 table.-striped tr:nth-of-type(odd) {
   background: white;
@@ -5313,7 +5313,7 @@ thead tr {
   background-color: #F3F4F6 !important;
 }
 thead th {
-  color: #374151;
+  color: #333333;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -5353,7 +5353,7 @@ and also iPads specifically.
   td {
     /* Behave  like a "row" */
     border: none;
-    border-bottom: 1px solid #374151;
+    border-bottom: 1px solid #333333;
     position: relative;
     padding-left: 50%;
   }
@@ -5368,7 +5368,7 @@ and also iPads specifically.
     white-space: nowrap;
     /* Label the data */
     content: attr(data-column);
-    color: #374151;
+    color: #333333;
     font-weight: bold;
   }
 }
@@ -10576,6 +10576,7 @@ pre.wp-block-verse {
 /* Custom Styles */
 body {
   color: #404040;
+  background-color: #333333;
   font: 400 15px/22px 'Helvetica Neue', Sans-serif;
   margin: 0;
   padding: 0;
@@ -10730,23 +10731,34 @@ gets 2/3 of the page. You can adjust this to your personal liking. */
 }
 .stopside {
   width: 20%;
-  height: 100vh;
+  height: 800px;
+}
+.stopside h1 {
+  color: white;
 }
 .mapside {
   position: relative;
   width: 80%;
-  height: 100vh;
+  height: 800px;
 }
 .descside {
   display: none;
   min-width: 300px;
   width: 20%;
-  height: 100vh;
+  height: 800px;
 }
 .bodybox {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 800px;
+}
+.mapboxgl-map {
+  position: absolute;
+  height: 100%;
+}
+.mapboxgl-popup-content h3 {
+  color: #333333;
 }
 /* Mobile Styles */
 @media (max-width: 1024px) {
